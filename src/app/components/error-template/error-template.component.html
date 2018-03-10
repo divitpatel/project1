@@ -1,0 +1,12 @@
+<div *ngIf="hardstop">
+	<p>It looks like our application is experiencing some difficulty verifying your account information at this time.</p>
+</div>
+<div *ngIf="throttleCapReached">
+	<p>It looks like our application is experiencing some difficulty verifying your account information at this time. Please try again in 30 minutes.</p>
+</div>
+<div *ngIf="contactTechSupport">
+	<p>It looks like our application is experiencing some difficulty verifying your account information at this time. Please check back in a few minutes or contact customer support at <866-755-2680>, M-F, 8 a.m. to 8 p.m. ET.</p>
+</div>
+<div *ngIf="loginAttemptsExceeded">
+	<p>You have exceeded the number of login attempts allowed. Please contact your Security Administrator <866-755-2680> or Help Desk at <866-755-2680></p>
+</div>
