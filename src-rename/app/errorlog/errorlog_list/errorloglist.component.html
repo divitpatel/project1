@@ -1,0 +1,43 @@
+<div class="form-group">
+
+</div>
+<!-- [columns]="columns" -->
+<div class='row'>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class='panel-heading'>Error Log</div>
+        <div class='panel-body'>
+                
+            <div>
+                <input type='text' style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...' (keyup)='updateFilter($event)'
+                />
+
+                <ngx-datatable class="material" [rows]="rows"
+                 [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'"
+                [limit]="5">
+                    <ngx-datatable-column name="id"></ngx-datatable-column>
+                    <ngx-datatable-column name="userName"></ngx-datatable-column>
+                    <ngx-datatable-column name="firstName"></ngx-datatable-column>
+                    <ngx-datatable-column name="email"></ngx-datatable-column>
+                    <ngx-datatable-column name="phoneNumber"></ngx-datatable-column>
+                    <ngx-datatable-column name="location"></ngx-datatable-column>
+                    <ngx-datatable-column name="ipAddress"></ngx-datatable-column>
+                    <ngx-datatable-column name="errorLog">
+                            <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                                    <a
+                                    (click)="errorclickevent(row)">{{value}}
+                                  </a>
+                                  <!-- <button (click)="showDialog = !showDialog" class="btn">Open</button> -->
+                                  </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="date"></ngx-datatable-column>
+                </ngx-datatable>
+
+            </div>
+
+        </div>
+    </div>
+    <app-dialog [(visible)]="showDialog">
+            <h1>{{errordetails}}</h1>
+            <button (click)="showDialog = !showDialog" class="btn">Close</button>
+          </app-dialog>

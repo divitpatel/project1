@@ -1,0 +1,36 @@
+.ColumnWithHeading{
+    position: relative;
+    display: inline-block;
+    margin: 0 -4px 10px 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+.cwhHeading{
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;
+    margin: 0 0 13px 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.cwhList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+.cwhListItem{
+    display: block;
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+}

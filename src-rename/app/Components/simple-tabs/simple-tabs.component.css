@@ -1,0 +1,123 @@
+.SimpleTabs{
+}
+.DesktopSimpleTabs{
+    list-style: none;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.SimpleTabButton{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    line-height: 72px;
+    padding: 0 25px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #333;
+}
+
+.SimpleTabButton.hovered{
+    background-color: #666;
+}
+
+.SimpleTabButton.active{
+    font-weight: bold;
+}
+
+.SimpleTabButton.active .tip{
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    left: 50%;
+    margin-left: -20px;
+    border: 20px solid transparent;
+    border-top-color:  #ff0000;
+    content: " ";
+}
+
+.MobileSimpleTabs{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.MobileSimpleTabsHeading{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    line-height: 72px;
+    padding: 0 25px;
+    margin: 0;
+    font-family: OpenSansRegular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    background-color: #333;
+}
+.MobileSimpleTabsHeading i{ margin-left: 25px;}
+.MobileSimpleTabsMenuScreen{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top:50px;
+    background-color: #0f0f0f;
+    z-index: 99999;
+}
+.MobileSimpleTabButton{
+    display: block;
+    position: relative;
+    color: #bbb;
+    line-height: 72px;
+    padding: 0 25px 0 60px;
+    font-family: OpenSansRegular, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+.MobileSimpleTabButton.active{
+    font-weight: bold;
+}
+
+.closeButton{
+    position: absolute;
+    top: 24px;
+    right: 44px;
+    z-index: 99;
+    font-size: 24px;
+}
+
+.desktopLayout .DesktopSimpleTabs{
+    display: block;
+}
+.desktopLayout .MobileSimpleTabs{
+    display: none;
+}
+
+.mobileLayout .DesktopSimpleTabs{
+    display: none;
+}
+.mobileLayout .MobileSimpleTabs{
+    display: block;
+}
+
+.mobileLayout .MobileSimpleTabs .MobileSimpleTabsMenuScreen{
+    display: none;
+}
+.mobileLayout .MobileSimpleTabs .MobileSimpleTabsMenuScreen.show{
+    display: block;
+}

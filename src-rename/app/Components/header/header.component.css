@@ -1,0 +1,160 @@
+.mbr-page-header h1 {
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-heading-two {
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    display: block;
+    line-height: 1.1
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: .1;
+    transition: max-height .25s ease-out, opacity .25s ease-out, visibility 0s ease-out
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col ul a {
+    border: 0
+}
+
+.mbr-top-of-page-wrapper .ant-navigation-wrapper a {
+    color: #fff;
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col .ant-heading-two .fa {
+    font-size: 40px;
+    position: relative;
+    top: -2px;
+    transform: rotateX(0deg);
+    transition: transform .35s ease;
+    color: #fff
+}
+
+.mbr-top-of-page-wrapper .ant-menu-expand {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col ul ul {
+    max-height: 0
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col li {
+    font-weight: 600;
+    margin: 10px 0 20px
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col li li {
+    font-weight: 400;
+    margin: 10px 20px 0
+}
+
+.mbr-top-of-page-wrapper .ant-nav-col li li a {
+    padding: 3px 0;
+    display: inline-block
+}
+
+.mbr-page-body {
+    margin-top: 2rem;
+}
+
+.tcp-middle-of-page {
+    z-index: 0;
+    position: relative;
+}
+
+.mbr-page-header {
+    text-align: center;
+    color: #fff;
+    margin-top: 65px;
+}
+
+.mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-nav-col:first-child {
+    transition-delay: .3s, 0s, .1s;
+    transition-duration: .35s, .45s, .15s;
+}
+
+.mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-nav-col {
+    padding-left: 0;
+    padding-right: 17px;
+    list-style: none;
+    left: -1000px;
+    position: relative;
+    opacity: .05;
+    border: 0 solid transparent;
+    transition-property: border, left, opacity;
+    transition-timing-function: ease-out, ease-out, ease-in;
+    transition-delay: .3s, .15s, .1s;
+    transition-duration: .35s, .45s, .15s;
+}
+
+@media screen and (min-width: 800px) {
+    .mbr-page-header {
+        text-align: left;
+        margin-top: 100px;
+    }
+    .mbr-page-header h1 {
+        float: left;
+    }
+    .mbr-page-header .ant-help-container {
+        display: block;
+        float: right;
+        clear: none;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-nav-col {
+        padding-left: 50px;
+        padding-right: 40px;
+        margin-bottom: 20px;
+        left: 0;
+        top: -1000px;
+        position: relative;
+        opacity: .05;
+        border: 0 solid transparent;
+        transition-property: border, top, opacity;
+        transition-timing-function: ease-out, ease-out, ease-in;
+        transition-delay: 0s, .05s, .4s;
+        transition-duration: .55s, .55s, .25s;
+    }
+    .mbr-top-of-page-wrapper .ant-navigation-wrapper {
+        height: calc(100vh - 85px);
+        clear: both;
+    }
+    .mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-nav-col:first-child {
+        transition-delay: 0s, 0s, .3s;
+    }
+    .mbr-top-of-page-wrapper .ant-logo-wrapper img {
+        margin: 16px auto;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mbr-top-of-page-wrapper .ant-task-bar-content {
+        top: 102%;
+        right: -93%;
+    }
+    .mbr-page-header {
+        text-align: left;
+        margin-top: 8px;
+    }
+    .mbr-top-of-page-wrapper .ant-logo-wrapper img {
+        margin: 21px auto;
+        width: 170px;
+    }
+}

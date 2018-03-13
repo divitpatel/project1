@@ -1,0 +1,21 @@
+<div class='mbr-page-wrapper'>
+    <app-header (handleClickUrl)='navigatePagesByUrl($event)' [features] = 'config ? config.data.features : {}'></app-header>
+</div>
+
+<div class="messageContainer">
+    <msg-cmp></msg-cmp>
+</div>
+
+<div aria-label="" class="masthead" style="background-color: #0079c2">
+    <header>
+        <h1 class="headline-underline animate">
+            {{subTitle}}
+        </h1>
+    </header>
+</div>
+
+<div class="main-container">
+    <router-outlet></router-outlet>
+</div>
+
+<app-footer></app-footer>

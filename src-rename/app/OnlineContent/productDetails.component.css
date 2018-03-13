@@ -1,0 +1,25 @@
+.back-navigator {
+    padding-left: 68px;
+    background: white;
+    padding-top: 40px;
+}
+
+.bp-box {
+    z-index: unset;
+}
+
+.bp-content-main-container {
+    margin: auto 20px;
+    box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -webkit-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -moz-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);}
+
+/* .bp-box div {
+    display: inline-block;
+} */
+
+.no-content-available{
+    color: #c9c9c9;
+    font-size: 24px;
+    text-align: center;
+}

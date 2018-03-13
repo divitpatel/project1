@@ -1,0 +1,39 @@
+<div class="bill-summary-main content-container" (scroll)="attachScrollHandler($event)">
+  <simple-tabs [labels]='tabProps.labels' [activeTab]='tabProps.activeTab' [colorSettings]='tabProps.colorSettings' [breakpoint]='tabProps.breakpoint'
+    (tabSelected)='viewTabContent($event)'>
+  </simple-tabs>
+
+  <list-view-header [title]="getTitle()">
+    <tags-container class="tags-container" 
+      [tags]="filterTags" 
+      (closeTag)="onCloseTag($event)">
+    </tags-container>
+
+    <sort-and-filter class="sort-filter ant-float-right"
+      [desktopView]="viewportWidth > 900"
+      [filterOptions]="filterOptions" 
+      (onFilter)="applyFilter($event)" 
+      [content]="content"
+      [searchResultArr]="clientSearch"
+      [sortOrder]="sortOrder"
+      [sortBy]="sortBy" 
+      [sortDisplayText]="sortDisplayText" 
+      (onSort)="applySort($event)" 
+      (onSearch)="applySearch($event)"
+      (onSortAndFilter)="applySortAndFilter($event)">
+    </sort-and-filter>
+
+  </list-view-header>
+
+  <div *ngIf='!summary || filterInProgress' data-uxd-data-loader-cmp>Loading Summary</div>
+
+  <div *ngIf='summary && !billingRecordNotFound && !filterInProgress; else noRecordFound'>
+    <div class="row-cont" *ngFor="let val of summary.billingSummary">
+      <expanding-card [columnData]='renderBillingSummary(val)' (toggleCallback)="expandToggleCallback({isExpanded:$event, rowData:val})"></expanding-card>
+    </div>
+    <div class="progressIndicator" *ngIf='isNextPageLoading' data-uxd-data-loader-cmp>{{progressIndicatorMessage}}</div>
+  </div>
+  <ng-template #noRecordFound>
+    <h2 *ngIf="billingRecordNotFound && !filterInProgress" class="no-record">No Record Found</h2>
+  </ng-template>
+</div>

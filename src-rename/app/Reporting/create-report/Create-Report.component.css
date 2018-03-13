@@ -1,0 +1,57 @@
+#create-report {
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 1px 3px 1px #d3d3d3;
+}
+
+.report-select {
+    margin-bottom: 40px;
+}
+
+#create-report .horizontal-center {
+    text-align: center;
+}
+
+legend#legendmdSelect {
+    margin-bottom: 5px;
+}
+
+div#reportType button {
+    color: #fe5e3c;
+}
+
+.report-form .collapse-block {
+    margin-bottom: 40px;
+}
+
+.report-form .collapsed {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.report-form .collapsed .fa {
+    width: 20px;
+    height: 20px;
+    color: #fe5e3c;
+    position: relative;
+    top: 1px;
+}
+
+.ant-padding-rt-15 {
+    padding-right: 15px;
+}
+
+.ant-padding-lt-15 {
+    padding-left: 15px;
+}
+
+.orange-dd .pfSelect {
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    .create-report {
+        padding: 40px 120px;
+    }
+}

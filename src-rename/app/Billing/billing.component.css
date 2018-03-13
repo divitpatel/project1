@@ -1,0 +1,170 @@
+.bill-summary-main .viewDetailsLink {
+    text-decoration: none;
+    top: -3px;
+    position: relative;
+    font-size: 16px;
+}
+
+.bill-summary-main .ExpandingCard .ColumnWithHeading {
+    overflow: visible;
+}
+
+.bill-summary-main .ColumnWithHeading .cwhListItem {
+    font-size: 17px;
+}
+
+.bill-summary-main .collapsedView .viewDetailsIcon {
+    line-height: 1.2;
+    font-size: 25px;
+    margin-left: 5px;
+    color: #fe5e3c
+}
+
+.bill-summary-main h3 {
+    font-size: 22px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.bill-summary-main .expanded .collapsedView {
+    display: none;
+}
+
+.bill-summary-main .expanded .expandedView {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.bill-summary-main .expandedView .bttn {
+    padding: 6px 15px;
+}
+
+.bill-summary-main .expandedView {
+    display: none;
+}
+
+.bill-summary-main .ExpandingCard .main-column-cont .cwhListItem {
+    width: 250px;
+}
+
+.bill-summary-main .ExpandingCard .main-column-cont .cwhListItem h3 {
+    line-height: 30px
+}
+
+.bill-summary-main .column-cont {
+    padding: 15px 0 0 0;
+}
+
+.bill-summary-main .expand-toggle-btn {
+    padding: 25px 0 15px 0;
+}
+
+.bill-summary-main .fa-file-pdf-o:before {
+    content: "\f1c1";
+    color: #E82D05;
+    font-size: 26px;
+    padding-right: 10px;
+}
+
+.bill-summary-main.content-container {
+    padding: 0;
+    box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -webkit-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -moz-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+}
+
+.row-cont {
+    background-color: #fff;
+}
+
+.row-cont:nth-child(even) {
+    background-color: #eee;
+}
+
+.messageContainer {
+    position: absolute;
+    z-index: 200;
+    width: 85%;
+    top: 92px;
+    text-align: center;
+}
+
+.filter-sort-container {
+    width: auto;
+    position: relative;
+    display: inline-flex;
+    float: right;
+    right: -35px;
+}
+
+.sortHeaderIcon {
+    width: 32px;
+    height: 32px;
+    background: url(/app/uxAssets/images/Sort-Icon.png) no-repeat center;
+    margin-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 77px;
+}
+
+@media screen and (max-width:800px) {
+    .bill-summary-main.content-container {
+        margin-top: 0;
+        z-index: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bill-summary-main .expanded .expandedView {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:801px) {
+    .bill-summary-main.content-container {
+        width: 100%;
+    }
+}
+
+.cwhListItem[_ngcontent-c10] {
+    text-transform: capitalize;
+}
+
+.progressIndicator {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    height: 100px;
+}
+
+.no-record {
+    text-align: center;
+    padding: 40px;
+    color: #d3d3d3;
+}
+
+.ant-sort-dropdown {
+    float: right;
+    top: -15px;
+}
+
+
+@media(max-width: 900px) {
+    .ant-sort-dropdown {
+        float: none;
+        margin-top: 10px;
+    }
+} 
+
+.tags-container{
+    float: left;
+    width: 30%;
+}
+
+@media screen and (max-width: 900px) {
+    .tags-container {
+        width: 100%
+    }
+}

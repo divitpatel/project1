@@ -1,0 +1,110 @@
+.filterList {
+    padding-right: 12px;
+}
+
+fieldset.pfSelect legend {
+    margin-bottom: 6px;
+}
+
+.pfSelect button:active {
+    background: #fff !important;
+    color: #666666 !important;
+    border: 1px solid #0079C2;
+}
+
+.psButton span {
+    display: inline-block;
+    top: 2px;
+}
+
+.psButton span.psActiveOption {
+    width: calc(100% - 2.65rem);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.psArrow {
+    border-left: 1px solid #666;
+    display: inline-block;
+    color: #0079C2;
+    width: 1.75rem;
+    text-align: center;
+    padding: .25rem .6rem;
+    font-size: 24px;
+}
+
+.pfSelect button:focus .psArrow {
+    border-left: 1px solid #0079C2;
+}
+
+.psDropdown {
+    width: 99%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 2px;
+    padding: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    -webkit-transition: max-height .25s ease-out;
+    -o-transition: max-height .25s ease-out;
+    transition: max-height .25s ease-out;
+    background: #fff;
+}
+
+.psDropdown.active {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.psDropdown input {
+    position: absolute;
+    left: -9999px;
+}
+
+.ant-md-select .pfSelect .psDropdown {
+    width: calc(100% - 4px);
+    max-width: 250px;
+}
+
+.psLabel {
+    display: block;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.psLabel:hover,
+.psOption.focus+.psLabel {
+    background: #005b99;
+    color: #fff;
+}
+
+.psLabelDisable,
+.psLabelDisable:hover {
+    display: block;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 0px;
+    font-weight: 400;
+    background: #D3D3D3;
+    color: #666666;
+    opacity: 0.5;
+}
+
+.hideBydefault {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.datePicker {
+    position: absolute;
+}

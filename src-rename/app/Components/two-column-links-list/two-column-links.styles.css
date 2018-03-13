@@ -1,0 +1,24 @@
+
+.bp-footer-links li:first-child {
+    border-top: none !important;
+}
+
+.title {
+    color: #4a90e2;
+}
+
+.title.pdf-doc::before{
+    content: "\F1E7";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #FE5E3C;
+    padding-right: 7px;
+}
+
+.title.word-doc::before{
+    content: "\F1EF";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #FE5E3C;
+    padding-right: 7px;
+}

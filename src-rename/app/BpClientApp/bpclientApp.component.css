@@ -1,0 +1,20 @@
+.mbr-page-wrapper {
+    z-index: 999;
+}
+.masthead{
+    margin-top: 86px;
+}
+
+.messageContainer{
+  position: absolute;
+  z-index: 200;
+  width: 85%;
+  top: 92px;
+  text-align: center;
+}
+
+@media screen and (min-width: 801px){
+    .masthead .container{
+        width: 970px;
+    }
+}

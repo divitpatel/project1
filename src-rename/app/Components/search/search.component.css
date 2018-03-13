@@ -1,0 +1,87 @@
+fieldset.search {
+    position: relative;
+    width: 100%;
+    min-width: 250px;
+}
+
+.search input {
+    width: 100%;
+    padding: 4.8px 20px 4.8px 12px;
+    background: #ffffff;
+    border: 1px solid #666;
+    color: #666666;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 400;
+    margin:0;
+}
+
+.ant-md-select .pfSelect .search {
+    width: calc(100% - 4px);
+    max-width: 250px;
+}
+
+.search .fa-search, .search .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 15px;
+    color: #0079c2;
+}
+
+.inactive {
+    opacity: 0.3;
+}
+.psDropdown {
+    width: 99%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 2px;
+    padding: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    -webkit-transition: max-height .25s ease-out;
+    -o-transition: max-height .25s ease-out;
+    transition: max-height .25s ease-out;
+    background: #fff;
+}
+
+.psDropdown.active {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.psDropdown input {
+    position: absolute;
+    left: -9999px;
+}
+
+.ant-md-select .pfSelect .psDropdown {
+    width: calc(100% - 4px);
+    max-width: 250px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.psLabel {
+    display: block;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 0px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.psLabel:hover,
+.psOption.focus+.psLabel {
+    background: #005b99;
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+.filter-sort-container {
+    width: auto;
+    position: relative;
+    display: inline-flex;
+    float: right;
+    right: -35px;
+}
+
+.sortHeaderIcon {
+    width: 32px;
+    height: 32px;
+    background: url(/app/uxAssets/images/Sort-Icon.png) no-repeat center;
+    margin-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 77px;
+}
+.report-summary-comp .sortHeaderIcon {
+    top: 17px;
+}
+
+.ant-sort-dropdown {
+    float: right;
+    top: -15px;
+}
+
+
+@media(max-width: 900px) {
+    .ant-sort-dropdown {
+        float: none;
+        margin-top: 10px;
+    }
+} 

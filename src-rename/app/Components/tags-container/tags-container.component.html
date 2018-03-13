@@ -1,0 +1,8 @@
+<div class="sortSel">
+    <ul *ngIf="checkIfArray()">
+       <li *ngFor="let tag of tags">
+          {{tag.label}}
+          <span class="clSortSel fontAwesome fa-times" (click)="onClose(tag)"></span>
+       </li>
+    </ul>
+</div>
