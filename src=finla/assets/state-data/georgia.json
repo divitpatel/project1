@@ -1,0 +1,110 @@
+{
+    "state": "GA",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "866-215-4879"},
+                  {"email": "EastBrokerServices@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-633-4368"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": ""},
+                  {"email": "bluesolutions@bcbsga.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": ""},
+                  {"email": "bluesolutions@bcbsga.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"ACA": "855-886-6155"},
+                  {"Non-ACA": "800-770-6226"},
+                  {"elite": "866-241-3374"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "877-364-2003"},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}

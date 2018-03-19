@@ -1,0 +1,117 @@
+{
+    "state": "CA",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "866-317-9022"},
+                  {"email": "nvindbroker@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "888-209-7839"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "888-445-9236"},
+                  {"email": "NVSGBroker@anthem.com"},
+                  {"fax": "888-819-7475"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "800-922-4770"},
+                  {"email": "small.group@anthem.com"},
+                  {"fax": "805-750-2227"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "877-833-5734"},
+                  {"email": "N/A"},
+                  {"Provider-fax": "866-365-5504"},
+                  {"Member-fax": "877-287-1262"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"Hotline": "800-422-2732"},
+                  {"Lindsay-Dixon 100+": " 702-586-6233"},
+                  {"Lisa Schloemer 51-99":  "775-448-4149"},
+                  {"Quotes": "51plusNV@anthem.com"},
+                  {"Customer Service": "877-811-3106"},
+                  {"Lumenos Customer Service": "866-837-4596"},
+                  {"Tonik Customer Service": "800-317-9818"},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "800-922-4770"},
+                  {"email": "eligibility.team-west@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}

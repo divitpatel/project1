@@ -1,0 +1,177 @@
+<div class="form-group">
+
+</div>
+<!-- [columns]="columns" -->
+<div class='row'>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class='panel-heading'>Error Log</div>
+        <div class='panel-body'>
+
+            <div>
+                <input type='text' #filtertextbox style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...'
+                />
+                <button (click)="updateFilter(filtertextbox.value)">filter</button>
+                <ngx-datatable class="material" [rows]="filteredItems" [limit]="20" (page)='setPage($event)' [columnMode]="'force'" [headerHeight]="50"
+                    [footerHeight]="50" [rowHeight]="'auto'">
+                    <ngx-datatable-column name="username" [sortable]="false">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                            <div *ngIf="value  != '' && value != null">{{value}}</div>
+                            <div *ngIf="value  == ''||value == null"><strong>No Data</strong></div>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="errorCode" [sortable]="false">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                            <div *ngIf="value  != '' && value != null">{{value}}</div>
+                            <div *ngIf="value  == ''||value == null"><strong>No Data</strong></div>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="timeStamp" [sortable]="false">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                            <div *ngIf="value  != '' && value != null">{{value}}</div>
+                            <div *ngIf="value  == ''||value == null"><strong>No Data</strong></div>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name=" errorDesc" [sortable]="false">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                            <div *ngIf="value  != '' && value != null">{{value}}</div>
+                            <div *ngIf="value  == ''||value == null"><strong>No Data</strong></div>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="errorDetailedDesc" [sortable]="false">
+                        <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                            <div (click)="errorclickevent(row)">view detail</div>
+                        </ng-template>
+                    </ngx-datatable-column>
+                </ngx-datatable>
+                <button *ngIf="pageNumber > 1" (click)="prvpageclick()">Previous</button>
+                <button (click)="nextpageclick()">Next</button>
+            </div>
+
+        </div>
+    </div>
+    <app-dialog [(visible)]="showDialog">
+        <div class='panel panel-primary'>
+            <div class='panel-heading' style='font-size:large'>
+                Error Details
+            </div>
+            <div class='panel-body container-fluid'>
+
+                <div class="row">
+                        <div class="col-sm-6">
+                                <div class="form-group row">
+                                    <label for="coveredEntityId" class="col-4 col-form-label">_id</label>
+                                    <p>{{(errorlogdetails._id != ''&& errorlogdetails._id != null)?errorlogdetails._id : 'No data'}}</p>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="coveredEntityId" class="col-4 col-form-label">encryptedTaxId</label>
+                                        <p>{{(errorlogdetails.encryptedTaxId != ''&& errorlogdetails.encryptedTaxId != null)?errorlogdetails.encryptedTaxId : 'No data'}}</p>
+                                    </div>
+                         </div>
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label for="coveredEntityId" class="col-4 col-form-label">firstName</label>
+                            <p>{{(errorlogdetails.firstName != ''&& errorlogdetails.firstName != null)?errorlogdetails.firstName : 'No data'}}</p>
+                        </div>
+                        <div class="form-group row">
+                                <label class="col-4 col-form-label">lastName</label>
+                                <p>{{(errorlogdetails.lastName != ''&& errorlogdetails.lastName != null)?errorlogdetails.lastName : 'No data'}}</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label for="coveredEntityId" class="col-4 col-form-label">username</label>
+                            <p>{{(errorlogdetails.username != ''&& errorlogdetails.username != null)?errorlogdetails.username : 'No data'}}</p>
+                        </div>
+                        <div class="form-group row">
+                                <label for="coveredEntityId" class="col-4 col-form-label">emailAddress</label>
+                                 <p>{{(errorlogdetails.emailAddress != ''&& errorlogdetails.emailAddress != null)?errorlogdetails.emailAddress : 'No data'}}</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                            <div class="form-group row">
+                                <label for="coveredEntityId" class="col-4 col-form-label">phoneNumber</label>
+                                <p>{{(errorlogdetails.phoneNumber != ''&& errorlogdetails.phoneNumber != null)?errorlogdetails.phoneNumber : 'No data'}}</p>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="coveredEntityId" class="col-4 col-form-label">timeStamp</label>
+                                     <p>{{(errorlogdetails.timeStamp != ''&& errorlogdetails.timeStamp != null)?errorlogdetails.timeStamp : 'No data'}}</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                                <div class="form-group row">
+                                    <label for="coveredEntityId" class="col-4 col-form-label">errorCode</label>
+                                    <p>{{(errorlogdetails.errorCode != ''&& errorlogdetails.errorCode != null)?errorlogdetails.errorCode : 'No data'}}</p>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="coveredEntityId" class="col-4 col-form-label">errorDesc</label>
+                                         <p>{{(errorlogdetails.errorDesc != ''&& errorlogdetails.errorDesc != null)?errorlogdetails.errorDesc : 'No data'}}</p>
+                                </div>
+                         </div>
+                         <div class="col-sm-6">
+                                <div class="form-group row">
+                                        <label for="coveredEntityId" class="col-4 col-form-label">errorDetailedDesc</label>
+                                         <p>{{(errorlogdetails.errorDetailedDesc != ''&& errorlogdetails.errorDetailedDesc != null)?errorlogdetails.errorDetailedDesc : 'No data'}}</p>
+                                </div>
+                         </div>
+                </div>
+                <!-- <form class="form-horizontal" role="form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">username</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.username != ''?errorlogdetails.username : 'test'}}
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label"> emailAddress</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.emailAddress}}
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label"> encryptedTaxId</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.encryptedTaxId}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-sm-6">
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">errorCode</label>
+                                <div class="col-8">
+                                        {{(errorlogdetails.errorCode != ''&& errorlogdetails.errorCode != null)?errorlogdetails.errorCode : 'test'}}
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">timeStamp</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.timeStamp}}
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">errorDetailedDesc</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.errorDetailedDesc}}
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">errorDesc</label>
+                                <div class="col-8">
+                                    {{errorlogdetails.errorDesc}}
+                                </div>
+                            </div>
+                        
+                    </div>
+                </form> -->
+            </div>
+            <div class='panel-footer'>
+                <a class='btn btn-default' (click)="showDialog = !showDialog">
+                    <i class='glyphicon glyphicon-chevron-left'></i> Back
+                </a>
+            </div>
+        </div>
+    </app-dialog>

@@ -1,0 +1,13 @@
+<div>
+  <fieldset class="pfSelect">
+    <!-- <legend class="hidden" *ngIf="selectedValue">{{selectedValue.text}}</legend>
+    <legend class="hidden" *ngIf="!selectedValue">{{placeholder}}</legend> -->
+    <button class="psButton" (click)="toggleList()">
+      <span class="psActiveOption" *ngIf="selectedValue">{{selectedValue.text}}</span>
+      <span data-analytics="arrowButton" class="psArrow fontAwesome fa-caret-down"></span>
+    </button>
+    <ul class="psDropdown" *ngIf="active">
+      <li class="psLabel" *ngFor="let item of renderList" (click)="selectedItem(item)">{{item.text}}</li>
+    </ul>
+  </fieldset>
+</div>

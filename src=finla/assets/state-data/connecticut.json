@@ -1,0 +1,110 @@
+{
+    "state": "CT",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "866-627-6537"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "855-325-1686"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "877-814-1396"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "866-627-6537"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "855-325-1686"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "855-886-6154"},
+                  {"email": "small.group@anthem.com"},
+                  {"fax": "855-750-2227"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "866-627-6537"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "855-325-1686"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "866-627-6537"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "855-325-1686"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "877-898-065"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "877-657-7946"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "866-627-6537"},
+                  {"email": "ctclientsupport@anthem.com"},
+                  {"fax": "855-325-1686"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}

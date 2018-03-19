@@ -1,0 +1,28 @@
+<div class="filterList">
+  <div class="ant-md-select">
+      <fieldset class="pfSelect" *ngIf="!searchEnabled; else search">
+        <legend class="hide">Select a State</legend>
+        <button tabIndex="-1" class="btn-primary psButton btn" (click)="toggleList()">
+          <span class="psActiveOption">{{getDisplayText()}}</span>
+          <span class="psArrow fa fa-caret-down"></span>
+        </button>
+        <div class="psDropdown" [ngClass]="{'active': listActive}">
+          <span *ngIf="listActive">
+            <label *ngFor="let item of listItems" class="psLabel" tabindex="0" htmlFor="item.label" (click)="handleChange(item)">
+              {{item.label}}
+            </label>
+          </span>
+        </div>
+      </fieldset>
+      <ng-template #search>
+        <search 
+          [placeHolderText]="selectedFilter.placeHolder"
+          [searchResultArr]="searchResultArr"
+          (onSearch)="handleSearch($event)"
+          (onFilter)="applyFilter($event)"
+          [selectedFilter]="selectedFilter"
+          (onCancelSearch)="handleCancelSearch()">
+        </search>
+      </ng-template>
+  </div>
+</div>

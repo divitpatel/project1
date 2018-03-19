@@ -1,0 +1,21 @@
+.login-container {
+    margin-top: 64.8px
+}
+
+.login-container .content {
+    padding: 30px 0 0px 0;
+}
+
+.twofa {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.twofa .footer a,
+.twofa .horizontal-center,
+.twofa .title+p {
+    text-align: center;
+}

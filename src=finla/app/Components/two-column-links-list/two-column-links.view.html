@@ -1,0 +1,31 @@
+<div class="row footer-links bp-footer-links">
+    <!-- First column -->
+    <div id="two-column-list-col1" *ngIf="list1.length > 0" class="col-xs-6">
+        <ul>
+            <li *ngFor="let linkItem of list1">
+                <a href="javascript:void(0)" (click)="onLink(linkItem.value)">
+                    <div class="title" [ngClass]="{'pdf-doc': linkItem.iconstyle === 0, 'word-doc': linkItem.iconstyle === 1}">
+                        {{linkItem.title}}
+                    </div>
+                    <br *ngIf="linkItem.description" />
+                    <small *ngIf="linkItem.description">{{linkItem.description}}</small>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Second column -->
+    <div id="two-column-list-col2" *ngIf="list2.length > 0" [ngClass]="{'col-xs-12': list1.length === 0, 'col-xs-6': list1.length > 0}">
+        <ul>
+            <li *ngFor="let linkItem of list2">
+                <a href="javascript:void(0)" (click)="onLink(linkItem.value)">
+                    <div class="title" [ngClass]="{'pdf-doc': linkItem.iconstyle === 0, 'word-doc': linkItem.iconstyle === 1}">
+                        {{linkItem.title}}
+                    </div>
+                    <br *ngIf="linkItem.description" />
+                    <small *ngIf="linkItem.description">{{linkItem.description}}</small>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

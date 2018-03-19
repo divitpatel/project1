@@ -1,0 +1,19 @@
+<div class="ExpandingCard" [ngClass]="{'expanded': expanded == true}">
+  <div>
+    <div class="main-column-cont">
+      <column-with-heading [styleOverrides]="mainColStyle" [rows]="columnData.mainColumn">
+      </column-with-heading>
+    </div>
+  </div>
+  <div class="column-cont">
+  <span *ngFor="let content of columnData.columns; let i = index">
+        <column-with-heading [rows]="content" [styleOverrides]="mainColStyle"
+          [containerStyles]="getContainerStyleFn(content, i)"
+          (handleColumnClick) = "handleColumnClick.emit(content)">
+        </column-with-heading>
+  </span>
+  </div>
+  <div class="expand-toggle-btn" (click)="handleExpandToggle()">
+    <i [ngClass]="{'fontAwesome fa-chevron-up': expanded, 'fontAwesome fa-chevron-down': !expanded}"></i>
+  </div>
+</div>

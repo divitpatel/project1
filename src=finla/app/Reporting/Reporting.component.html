@@ -1,0 +1,39 @@
+<div class="content-container report-main-container">
+  <create-report (handleCreateReport)="onCreateReport($event)"></create-report>
+
+  <div class="report-summary-main content-container" (scroll)="attachScrollHandler($event)">
+    <list-view-header [title]='getTitle()'>
+      <tags-container class="tags-container" 
+        [tags]="filterTags" 
+        (closeTag)="onCloseTag($event)">
+      </tags-container> 
+        <sort-and-filter  class="sort-filter ant-float-right"
+          [desktopView]="viewportWidth > 900"
+          [filterOptions]="filterOptions" 
+          (onFilter)="applyFilter($event)" 
+          [content]="content"
+          [searchResultArr]="clientSearch"
+          [sortOrder]="sortOrder"
+          [sortBy]="sortBy" 
+          [sortDisplayText]="sortDisplayText" 
+          (onSort)="applySort($event)" 
+          (onSearch)="applySearch($event)"
+          (onSortAndFilter)="applySortAndFilter($event)"
+          sortClassName="report-summary-comp">
+        </sort-and-filter>
+
+    </list-view-header>
+    <div *ngIf='creatingAReportInProgress' data-uxd-data-loader-cmp>Creating A report. This may take a few minutes.</div>
+    <div *ngIf='!reportSummary || filterInProgress' data-uxd-data-loader-cmp>Loading Reports</div>
+    <div *ngIf='reportSummary && !reportRecordNotFound && !filterInProgress else noRecordFound'>
+      <div class="row-cont" *ngFor="let val of reportSummary.data">
+        <expanding-card [columnData]='renderReportSummary(val)' (handleColumnClick)="handleClickAction({item:$event, rowDetails:val})"></expanding-card>
+     </div>
+      <div *ngIf="isNextPageLoading" class="progressIndicator" data-uxd-data-loader-cmp>{{progressIndicatorMessage}}</div>
+    </div>
+    <ng-template #noRecordFound>
+      <h2 *ngIf="reportRecordNotFound && !filterInProgress" class="no-record">No Record Found</h2>
+    </ng-template>
+  </div>
+
+</div>

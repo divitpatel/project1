@@ -1,0 +1,110 @@
+{
+    "state": "CO",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "1-866-317-9021"},
+                  {"email": "coindbroker@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "888-209-7839"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "303-864-6442 or 866-287-1351"},
+                  {"email": "cosmallgroupbus@anthem.com"},
+                  {"fax": "303-764-7047"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "800-922-4770"},
+                  {"email": "SmallGroupE&BSupport@anthem.com"},
+                  {"fax": "855-750-2227"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "877-833-5742"},
+                  {"email": "N/A"},
+                  {"fax": "303-764-7123"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "Customer Service (no broker unit) HMO/PPO 877-811-3106 Lumenous: HSA 866-837-4596 Quotes 51Plus@anthem.com 303-831-2034 Michelle Ontiveros 303-831-2007 Jackie Helton"},
+                  {"email": "Members log into anthem.com using the user ID and password and there is a link to send an email to customer service"},
+                  {"fax": "855-626-6478 (customer service)"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "877-811-3106"},
+                  {"email": ""},
+                  {"fax": "303-764-7321"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "877-811-3106"},
+                  {"email": "Members log into anthem.com using the user ID and password and there is a link to send an email to customer service"},
+                  {"fax": "855-626-6478 (customer service)"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}

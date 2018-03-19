@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script id="dtmAssetScript" src=""></script>
+</head>
+<body class="">
+  <app-root></app-root>
+
+  <script type="text/javascript">
+       /*
+           Adobe DTM Footer setup
+           Retry for 5 iterations, just in case the DTM script takes long time to load
+           TODO: XHR failure to /logger
+       */
+       var iterations = 0;
+       function setupDtm() {
+           if (typeof _satellite !== 'undefined') {
+               console.log("Setting up Adobe DTM!!!");
+               _satellite.pageBottom();
+           } else {
+               if (++iterations < 3) {
+                   console.log("Adobe DTM is not ready yet... retrying", iterations);
+                   setTimeout(setupDtm, 3000);
+               } else
+                   console.log("Unable to setup Adobe DTM, possible script download error!!!");
+           }
+       };
+
+       setupDtm();
+   </script>
+
+</body>
+</html>

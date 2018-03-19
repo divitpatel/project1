@@ -1,0 +1,12 @@
+<div class="ColumnWithHeading" [ngStyle]="containerStyles" >
+    <h3 class="cwhHeading" [ngStyle]="styles.heading">{{rows.label ? rows.label:""}}</h3>
+    <ul class="cwhContentList">
+      <li class="cwhListItem"  *ngIf="rows.type==='html'; else listContent" [innerHTML]="rows.content" [ngStyle]="rows.customStyles ? rows.customStyles : styles.row"  (click)="(rows.type==='html') ? handleClick() : null"></li>
+      <ng-template  #listContent>
+        <li class="cwhListItem" *ngIf="!isRowsArray(rows.content); else contentIsArray"  [ngStyle]="styles.row">{{rows.content}}</li>
+        <ng-template #contentIsArray>
+            <li class="cwhListItem"  [ngStyle]="styles.row" *ngFor="let item of rows.content">{{item}}</li>
+        </ng-template>
+      </ng-template>
+    </ul>
+</div>

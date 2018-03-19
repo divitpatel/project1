@@ -1,0 +1,110 @@
+{
+    "state": "CA",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-678-4466"},
+                  {"email": "agent.support@anthem.com"},
+                  {"fax": "877- 255-4015"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "888-209-7839"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-678-4466"},
+                  {"email": "CASGBrokerServices@anthem.com"},
+                  {"fax": "877-255-4015"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": "855- 854-1429"},
+                  {"email": "small.group@anthem.com"},
+                  {"fax": "855-750-2227"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "800-627-8797"},
+                  {"email": "N/A"},
+                  {"fax": "(877)287-1262"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": ""},
+                  {"email": ""},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}

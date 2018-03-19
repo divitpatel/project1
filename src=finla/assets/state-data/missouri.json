@@ -1,0 +1,110 @@
+{
+    "state": "MO",
+    "categories": [
+        {
+            "name": "Individual",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-742-8199"},
+                  {"email": "agency.services@anthem.com"},
+                  {"fax": "1-800-850-9888"}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Medicare",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-633-4368"},
+                  {"email": "medicareagentsupport@anthem.com"},
+                  {"fax": "805-376-9741"}
+                ],
+                "hours": []
+              }
+            ]
+          } ,
+          {
+            "name": "Small Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-648-0696"},
+                  {"email": "anthem.accountinquiries@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing(ACA)",
+                "channels": [
+                  {"phone": "855-886-6159"},
+                  {"email": ""},
+                  {"fax": "855-600-6848"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "800-648-0696"},
+                  {"email": "anthem.accountinquiries@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+            "name": "Large Group",
+            "topics": [
+              {
+                "type": "Broker Services",
+                "channels": [
+                  {"phone": "800-648-0696"},
+                  {"email": "insgbrokering@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Enrollment & Billing (Legacy SG & LG)",
+                "channels": [
+                  {"phone": "888-290-9159"},
+                  {"email": "cre&bsmallgroup@anthem.com"},
+                  {"fax": "877-628-4607"}
+                ],
+                "hours": []
+              },
+              {
+                "type": "Claims / Benefit Questions",
+                "channels": [
+                  {"phone": "800-648-0696"},
+                  {"email": "insgbrokering@anthem.com"},
+                  {"fax": ""}
+                ],
+                "hours": []
+              }
+            ]
+          },
+          {
+              "name": "Technical Support",
+              "topics": [
+                  {
+                      "type": "Technical Support",
+                      "channels": [
+                        {"phone": "888-268-4361"},
+                        {"email": "software.support@anthem.com"},
+                        {"fax": ""}
+                      ]
+                  }
+              ]
+          }  
+    ]
+}
