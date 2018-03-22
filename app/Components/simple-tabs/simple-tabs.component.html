@@ -1,0 +1,41 @@
+<div  class = "SimpleTabs"
+        [ngClass]= "(((viewportWidth-breakpoint) < 0)? 'mobileLayout': 'desktopLayout') + ((showMobileButtons)? ' mobileButtonsOpen':'')">
+    <ul class="DesktopSimpleTabs" [ngStyle]="colorConfing.tabContainerStyle">
+      <li *ngFor="let label of labels; let ind = index"
+          [ngClass]="'SimpleTabButton ' +((activeTab === ind)?'active':'')+((hoverTab === ind)?' hovered':'')"
+          (click)= "handleClick(ind, label)"
+          (mouseenter)= "onMouseEnter(ind)"
+          (mouseleave)= "onMouseLeave(ind)"
+          [ngStyle]="{'background-color': (hoverTab === ind) ? colorSettings.hover : ((activeTab === ind) ? colorSettings.active : colorSettings.normal), 'color': colorSettings.textColor}">
+            <div class="tip"
+                  [ngStyle]="{'borderTopColor': (hoverTab === ind)?colorSettings.hover:((activeTab === ind)?colorSettings.active:colorSettings.normal)}">
+            </div>
+            {{label}}
+      </li>
+    </ul>
+    <div class="MobileSimpleTabs" [ngStyle]="{'background-color': colorSettings.normal}">
+        <h2 class="MobileSimpleTabsHeading"
+            (click) = "handleOpenMobile($event)"
+            [ngStyle]="{'background-color': colorSettings.normal}"> {{labels[activeTab]}}
+            <i class="fontAwesome fa-angle-down"></i>
+        </h2>
+
+        <ul [ngClass]="'MobileSimpleTabsMenuScreen ' +((showMobileButtons)?'show':'')"
+            [ngStyle]="{'background-color': colorSettings.normal}">
+            <i class ="fontAwesome fa-times closeButton"
+               (click)="handleCloseMobile($event)"
+               [ngStyle]="{'color': colorSettings.textColor}"></i>
+
+              <li *ngFor="let label of labels; let ind = index"
+                   [ngClass]="'MobileSimpleTabButton ' +((activeTab === ind)?'active':'')"
+                   (click)="handleMobileClick(ind, label)"
+                   [ngStyle]="{
+                       'backgroundColor': colorSettings.normal,
+                       'color': colorSettings.textColor
+                   }">
+               {{label}}
+               <i [ngStyle]="{'color': colorSettings.textColor}" ></i>
+             </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="{{sortClassName}}">
+    <div class="filter-sort-container" *ngIf="desktopView ; else modalFilterAndSort">
+        <filter 
+            [filterOptions]="filterOptions"
+            [searchResultArr]="searchResultArr"
+            (onFilter)="handleFilter($event)"
+            (onSearch)="handleSearch($event)">
+        </filter>
+        <div class="ant-sort-dropdown">
+            <sort 
+                [content]="content" 
+                [sortOrder]="sortOrder" 
+                [sortBy]="sortBy" 
+                [displayText]="sortDisplayText" 
+                (onSort)="handleSort($event)">
+            </sort>
+        </div>
+    </div>
+
+    <ng-template #modalFilterAndSort>
+        <span class="sortHeaderIcon" (click)="openModal()"></span>
+        <div #modalSortFilter="modal" data-uxd-modal-cmp [modal]="modal">
+            <div class="modal-component-body">
+                <filter 
+                    [filterOptions]="filterOptions" 
+                    [searchResultArr]="searchResultArr"
+                    (onFilter)="handleFilter($event)"
+                    (onSearch)="handleSearch($event)">
+                </filter>
+                <div class="ant-sort-dropdown">
+                    <sort 
+                        [content]="content" 
+                        [sortOrder]="sortOrder" 
+                        [sortBy]="sortBy" 
+                        [displayText]="sortDisplayText" 
+                        (onSort)="handleSort($event)">
+                    </sort>
+                </div>
+            </div>
+            <div class="modal-component-footer">
+                <button type="button" class="btn btn-primary" [ngClass]="{disabled: !tempSortBy && !selectedFilter}" (click)="handleSortAndFilter()">Apply</button>
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </ng-template>
+</div>

@@ -1,0 +1,20 @@
+<div class="sortList">
+    <div class="sortDropDown">
+        <div
+          #mdSelect="ngModel"
+          [(ngModel)]="mdSelectNm"
+          data-uxd-dropdown-cmp
+          class="ant-md-select form-item"
+          [labelText]=""
+          name="mdSelect"
+          id="mdSelect"
+          [items]="content.dropDown2.options"
+          [defaultText]="'Sorted ' + displayText"
+          (onChange)="handleChange($event)"
+        >
+        </div>
+    </div>
+    <div class="sortOrderIcon">
+        <span [ngClass]="(sortOrder =='Asec') ? 'fa fa-sort-alpha-asc': 'fa fa-sort-alpha-desc'"  (click)="toggleSort()"></span>
+    </div>
+</div>

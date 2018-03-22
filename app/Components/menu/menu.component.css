@@ -1,0 +1,98 @@
+.ant-navigation-top ul,
+.ant-navigation-top li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ant-navigation-top .ant-nav-col {
+    font-size: 16px;
+    display: inline-block;
+    width: 33.333%;
+    vertical-align: top;
+    border-right: 1px solid rgba(255, 255, 255, .7);
+    padding: 0 1em;
+}
+
+.ant-navigation-top .ant-nav-col:last-child {
+    border: none;
+}
+
+.ant-navigation-top .row {
+    margin-top: 50px;
+}
+
+.ant-menu-cont {
+    margin-top: 10px;
+}
+
+.ant-menu-item {
+    cursor: pointer;
+}
+
+.ant-top-wrapper {
+    height: 80px;
+}
+
+.ant-heading-two,
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-navigation-wrapper {
+    padding-top: 16px;
+    display: block;
+    max-height: 100%;
+    background: 0 0;
+    visibility: visible;
+}
+
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-top-wrapper {
+    background-color: rgba(255, 255, 255, .03)!important;
+}
+
+.ant-menu-visible .ant-menu-label {
+    color: #fff;
+}
+
+.ant-menu-visible .ant-menu-icon-container .ant-menu-icon:before {
+    top: 0px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition-property: transform, top;
+}
+
+.ant-menu-visible .ant-menu-icon-container .ant-menu-icon:after {
+    bottom: 4px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition-property: transform, bottom;
+}
+
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-navigation-wrapper .ant-nav-col {
+    left: 0;
+    padding-bottom: 6px;
+    top: 0;
+    opacity: 1;
+}
+
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-menu-toggle,
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-menu-toggle:active,
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-menu-toggle:focus,
+.ant-menu-visible .mbr-top-of-page-wrapper .ant-menu-toggle:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .ant-navigation-top .ant-heading-two {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .ant-menu-visible .mbr-top-of-page-wrapper .ant-navigation-wrapper {
+        padding-top: 50px;
+    }
+}

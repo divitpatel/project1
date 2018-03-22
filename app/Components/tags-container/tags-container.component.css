@@ -1,0 +1,31 @@
+.sortSel ul {
+    list-style: none;
+    margin: 0;
+}
+
+.sortSel ul li {
+    display: inline-block;
+    padding: 6px 10px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    margin: 5px 10px 0px 0px;
+    border-radius: 10px;
+    min-width: 80px;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+span.clSortSel {
+
+    float: right;
+    padding: 0px 1px 0px 15px;
+    cursor: pointer;
+    line-height:1.5;
+}
+
+.whiteheader h3 {
+    color: white;
+}

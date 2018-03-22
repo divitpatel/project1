@@ -1,0 +1,20 @@
+<div class="back-navigator">
+    <a class="ant-arrow-previous" (click)="previousPageSelection(currentPage)" href="javascript:void(0)">
+        Back to {{previousPage.title}}
+    </a>
+</div>
+
+<div class="bp-box content-container static">
+    <div data-uxd-data-loader-cmp *ngIf="pageLoading; else pageContent">
+        <span>Your content is loading...</span>
+    </div>
+
+    <ng-template #pageContent>
+        <product-info [wcsContent]="currentPage" (onClick)="productSelection($event)" (onDocumentLinkClick)="onDocSelection($event)"
+            *ngIf="!pageLoading;"></product-info>
+
+        <div class="bp-box content-container static" *ngIf="fetchFailed || noContent">
+            <h3 class="no-content-available">There are no documents to display.</h3>
+        </div>
+    </ng-template>
+</div>

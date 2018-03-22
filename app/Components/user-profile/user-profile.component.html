@@ -1,0 +1,17 @@
+  <div class="ant-task-bar-content show" id="global-profileIcon">
+    <div class="row">
+        <div class="tab-pane fade in active" role="tabpanel">
+          <div class="col-sm-12">
+            <p class="ant-heading-two">{{loggedInUserInfo.producer.agencyName}}</p>
+            <ul class="ant-nav-secondary">
+              <!---->
+              <li *ngFor='let role of profileNavigation.menu'>
+                <a id="accountDetails" class="userPopupSubmenu" (click)="logOut($event)">{{role.title}}</a>
+              </li>
+              <!---->
+            </ul>
+          </div>
+          <div class="ant-menu-lastfocus" tabindex="0"></div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,283 @@
+.mbr-page-wrapper{
+  z-index: inherit;
+}
+
+.h1-topspacing{
+    margin-top: 2em;
+}
+
+.float-left{
+    float:left;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.masthead-bg{
+    background-color: #0079c2;
+}
+
+.masthead .headline-underline:after{
+    margin-bottom: 1em;
+}
+
+.state-select-box{
+    border: 30px #f1f1f1 solid;
+    padding: 3em;
+}
+
+.state-select-box-no-border{
+    border: none;
+    padding: 1em;
+}
+
+.state-underlineOff{
+    margin-bottom: 1.5em;
+    color: #00609a;
+}
+
+.state-select-text-container{
+    padding-bottom: 2em;
+}
+
+.state-select-text{
+    font-size: .8em;
+}
+
+.btn-info{
+    color: #fff;
+    background-color: #00609a;
+    border: 0;
+}
+
+.coctact-listing-column{
+    padding-left: 4em;
+}
+
+.contact-listing-category{
+    margin-top: 1.5em;
+}
+
+.contact-listing{
+    font-size: .8em;
+}
+
+.contact-listing-topic{
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.contact-listing-label{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: .8em;
+    margin-right: 1em;
+    margin-bottom: .2em;
+}
+
+.contact-listing-value{
+    display: inline-block;
+    font-size: .8em;
+    margin-bottom: .2em;
+}
+
+.list-item-h4{
+    color: #0079C2;
+    font-weight: 300;
+}
+
+.listing-email-link{
+    display: inline-block;
+    font-size: .9em;
+}
+
+.listing-email-link a{
+    color: #69b3e7;
+    display: inline-block;
+    font-size: .9em;
+}
+
+::ng-deep .column-table{
+    width:80%;
+    font-size: .7em;
+    margin-left: 10%;
+}
+
+.column-table div{
+    padding-bottom: 5px;
+}
+
+.list-line-left-width{
+    width:10%
+}
+
+.list-line-right{
+    padding-left:1em;
+}
+
+.bold-text{
+    font-weight: 500;
+}
+
+.list-item-rt-col{
+    padding-left: 50px;
+}
+
+.category-group td{
+    height: 8em;
+}
+
+.select-state-button{
+    font-size: 1em;
+}
+
+.select-state-button:before{
+    font-family: 'Glyphicons Halflings';
+    content: '\e062';
+    font-size: 1em;
+    padding-right: .9em;
+}
+
+.state-selection{
+    background:rgba(0, 0, 0, .5);
+}
+
+
+/* < modal  */
+
+.modal-header .close{
+    top: -13px;
+    right: -20px;
+    border: none;
+}
+.bottom-text{
+    /* margin-top:20px;
+    margin-bottom:40px; */
+    margin:40px auto;
+}
+
+.glyphicon-remove-circle:before{
+    font-size: 45px;
+    color: #fe5e3c;
+}
+
+.state-modal ::ng-deep .states li a:after{
+    /* overrides */
+    top: 27%;
+    font-weight: 100;
+}
+
+/*from vednor.css*/
+
+.definition-list dd,.headline{
+    margin-bottom:60px
+};
+
+.state-modal .states {
+    overflow:hidden;
+    padding-left:0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.state-modal .states li a{
+    display:block;
+    line-height:1.3;
+    padding:15px 0;
+    position:relative;
+    border-bottom:none;
+}
+
+.state-modal .modal-content{
+    max-height: 90%;
+    overflow-y: auto;
+  }
+
+  @media (min-width:480px){
+    .modal-dialog{
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+
+@media (min-width:801px){
+    .state-modal .states li a{
+        width:93%;
+    }
+}
+
+@media (max-width:530px){
+    .select-state-button{
+        font-size: .8em;
+    }
+}
+
+@media (max-height:800px){
+    .contact-us .modal-dialog{
+        margin: 10px auto;
+    }
+
+    .contact-us .modal-header{
+        padding: 20px 25px 0px;
+    }
+
+    .contact-us .definition-list dd, .headline{
+        margin-bottom: .5em;
+    }
+
+    .contact-us .bottom-text{
+        margin: .2em auto;
+    }
+}
+
+.state-modal .states li a:after{
+    content:"\E924";
+    color:#fe5e3c;
+    font-family: 'FontAwesome';
+    font-size:16px;
+    position:absolute;
+    right:0;
+    top:17px;
+}
+
+.headline.states .link{
+    color: #0079C2;
+}
+
+.headline-underline:after{
+    margin: 30px auto;
+}
+
+/*  modal > */
+
+h2.first-headline{
+    font-size:2.3em;
+    font-weight: 300;
+}
+
+.contacts-box{
+    margin-top:50px;
+    padding-top: 4em;
+}
+
+.prefooter{
+    display:block;
+    margin: auto auto 1em;
+}
+
+.prefooter .footer-links h4{
+    font-weight: 500;
+}
+
+.prefooter .footer-links li a{
+    font-size: .8em;
+    font-weight: 600;
+}

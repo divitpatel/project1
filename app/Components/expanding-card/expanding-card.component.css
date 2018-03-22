@@ -1,0 +1,162 @@
+.ExpandingCard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 25px 60px 15px 40px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.expand-toggle-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.column-cont {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.raIconContainer{
+  display: none;
+}
+.expanded .raIconContainer{
+  display: inline-block;
+  color: #0079C2;
+  padding-top: 30px;
+}
+
+.expanded .column-cont {
+    white-space: normal;
+}
+
+.expanded .column-cont .cwhContentList {
+    margin: 0;
+}
+
+.expanded .column-cont .cwhHeading {
+    white-space: normal;
+}
+
+.column-cont .ColumnWithHeading i {
+    color: #07a49d;
+    font-size: 38px;
+    line-height: 33px;
+    padding-top: 3px;
+}
+
+.ExpandingCard .ColumnWithHeading {
+    padding: 0 30px 0 0;
+    vertical-align: top;
+}
+
+.ExpandingCard .main-column-cont {
+    width: 250px;
+    padding: 0 40px 0 0;
+}
+
+.ExpandingCard .main-column-cont .cwhContentList .cwhListItem {
+    font-size: 22px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #848484;
+}
+
+.column-cont .cwhListItem {
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.ExpandingCard .actionLinkTxt {
+    color: #0079c2;
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    bottom: 24px;
+}
+
+.ColumnWithHeading{
+    position: relative;
+    display: inline-block;
+    margin: 0 -4px 10px 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+.cwhHeading{
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;
+    margin: 0 0 13px 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.cwhList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+.cwhListItem{
+    display: block;
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+.customIcon{
+  font-size: 14px;
+font-weight: 600;
+color: rgb(132, 132, 132);
+}
+
+.customIconText{
+  font-size: 18px;
+    font-weight: 400;
+    padding: 0px 15px 0px 0px;
+}
+
+@media all and (max-width: 600px) {
+    .ExpandingCard {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 15px 0 0 25px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .column-cont .ColumnWithHeading {
+        width: 100%;
+    }
+    .ExpandingCard.expanded {
+        display: block;
+    }
+    .ExpandingCard.expanded .column-cont .ColumnWithHeading {
+        display: block;
+    }
+    .ExpandingCard .main-column-cont .cwhListItem {
+        width: 100%;
+    }
+    .ExpandingCard.expanded .main-column-cont .cwhListItem {
+        width: 100%;
+    }
+}

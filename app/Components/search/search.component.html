@@ -1,0 +1,24 @@
+<div class="clear">
+    <fieldset class="search pfSelect">
+        <span class="fa fa-search" [ngClass]="{'hidden': !activateSearchIcon}" (click)="handleSearch(search.value)"></span>
+        <span class="fa fa-times" [ngClass]="{'hidden': activateSearchIcon }" (click)="handleClose()"></span>
+        <input #search class="Search term" ngModel autofocus tabIndex="0" [placeholder]="placeHolderText" (ngModelChange)="handleChange(search.value)"
+            (keypress)="handleKeyPress($event)" />
+        <div class="psDropdown" [ngClass]="{'active': listActive}">
+            <span *ngIf="searchResultArr && activateSearchIcon; else noRecordFound">
+                <label 
+                    *ngFor="let option of searchResultArr" 
+                    class="psLabel" 
+                    [ngStyle]="{'text-transform': selectedFilter.textStyle}"
+                    (click)="handleFilter(option)">
+                    {{(option[selectedFilter.value])}}
+                </label>
+            </span>
+            <ng-template #noRecordFound>
+                <label *ngIf="searchResultArr === null && activateSearchIcon" class="psLabel" >
+                    No Record Found
+                </label>
+            </ng-template>
+        </div>
+    </fieldset>
+</div>

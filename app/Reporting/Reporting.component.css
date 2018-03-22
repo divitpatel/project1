@@ -1,0 +1,193 @@
+.report-main-container {
+    padding: 0;
+    background-color: transparent;
+}
+
+.report-main-container .horizontal-center {
+    text-align: center;
+}
+
+.report-summary-main .viewDetailsLink {
+    text-decoration: none;
+    top: -3px;
+    position: relative;
+    font-size: 16px;
+}
+
+.report-summary-main .ExpandingCard .ColumnWithHeading {
+    overflow: visible;
+}
+
+.report-summary-main .ColumnWithHeading .cwhListItem {
+    font-size: 17px;
+}
+
+.report-summary-main .collapsedView .viewDetailsIcon {
+    line-height: 1.2;
+    font-size: 25px;
+    margin-left: 5px;
+    color: #fe5e3c
+}
+
+.report-summary-main h3 {
+    font-size: 22px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.report-summary-main .expanded .collapsedView {
+    display: none;
+}
+
+.report-summary-main .expanded .expandedView {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.report-summary-main .expandedView .bttn {
+    padding: 6px 15px;
+}
+
+.report-summary-main .expandedView {
+    display: none;
+}
+
+.report-summary-main .ExpandingCard .main-column-cont {
+    width: 220px;
+}
+
+
+/* .report-summary-main .ExpandingCard .main-column-cont .cwhListItem {
+    width: 250px;
+} */
+
+.report-summary-main .ExpandingCard .main-column-cont .cwhListItem h3 {
+    line-height: 30px
+}
+
+.report-summary-main .column-cont {
+    padding: 15px 0 0 0;
+}
+
+.report-summary-main .expand-toggle-btn {
+    padding: 25px 0 15px 0;
+}
+
+.report-summary-main .fa-file-pdf-o:before {
+    content: "\f1c1";
+    color: #E82D05;
+    font-size: 26px;
+    padding-right: 10px;
+}
+
+.report-summary-main.content-container {
+    padding: 0;
+    box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -webkit-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+    -moz-box-shadow: 0px 9px 10px -4px rgba(56, 56, 56, 0.43);
+}
+
+.row-cont {
+    background-color: #fff;
+}
+
+.row-cont:nth-child(even) {
+    background-color: #eee;
+}
+
+.row-cont:nth-child(odd) {
+    background-color: #fff;
+}
+
+.messageContainer {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    top: 23px;
+    text-align: center;
+}
+
+.filter-sort-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.sortHeaderIcon {
+    width: 32px;
+    height: 32px;
+    background: url(/app/uxAssets/images/Sort-Icon.png) no-repeat center;
+    margin-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 77px;
+}
+
+.cwhListItem {
+    text-transform: capitalize;
+}
+
+.progressIndicator {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    height: 100px;
+}
+
+.no-record {
+    text-align: center;
+    padding: 40px;
+    color: #d3d3d3;
+}
+
+.ant-sort-dropdown {
+    float: right;
+    top: -15px;
+}
+
+.tags-container {
+    width: auto;
+    flex-grow: 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .filter-sort-container {
+        display: inline-block;
+    }
+    .filterList {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .ant-sort-dropdown {
+        float: none;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .report-summary-main.content-container {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .report-summary-main .expanded .expandedView {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:801px) {
+    .report-summary-main.content-container {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+@media all and (min-width: 1440px) {
+    .report-summary-main::ng-deep .expand-toggle-btn {
+        display: none;
+    }
+}

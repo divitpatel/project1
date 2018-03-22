@@ -1,0 +1,22 @@
+<div class="ant-navigation-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li *ngFor='let item of navigation; index as i' class="ant-nav-col" [class.ant-menu-expanded]="(i === menuSelectedIndex)"
+            style="height:500px">
+            <h2 class="ant-heading-two hidden-xxs hidden-xs" id="{{item.headTitle}}">{{item.headTitle}}</h2>
+            <a class="ant-heading-two ant-menu-expand visible-xxs visible-xs" (click)="onClick(i)">{{item.headTitle}}
+              <span class="fa fa-angle-down pull-right"></span>
+            </a>
+            <ul class="ant-menu-cont">
+              <li *ngFor='let menuItem of item.menu'>
+                <a class="ant-menu-item" [ngClass]="{'disabled': menuItem.disable, 'hidden': menuItem.hide}" (click)="!menuItem.disable && navigateByUrl(menuItem.url)" id="{{menuItem.title}}" [attr.data-analytics]="menuItem.dataAnalytics">{{menuItem.title}}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

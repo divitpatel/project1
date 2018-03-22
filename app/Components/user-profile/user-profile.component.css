@@ -1,0 +1,15 @@
+@media screen and (min-width: 1024px) {
+    #global-profileIcon {
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #global-profileIcon {
+        right: 0%;
+    }
+}
+.ant-task-bar-content:after,
+.ant-task-bar-content:before {
+    right: 11px;
+}

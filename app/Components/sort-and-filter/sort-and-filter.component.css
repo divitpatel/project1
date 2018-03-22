@@ -1,0 +1,37 @@
+.filter-sort-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.sortHeaderIcon {
+    width: 32px;
+    height: 32px;
+    background: url(/app/uxAssets/images/Sort-Icon.png) no-repeat center;
+    cursor: pointer;
+}
+
+.report-summary-comp .sortHeaderIcon {
+    top: 17px;
+}
+
+.ant-sort-dropdown {
+    float: right;
+    top: -15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .filter-sort-container {
+        display: inline-block;
+    }
+    .filterList {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .ant-sort-dropdown {
+        float: none;
+        margin-top: 10px;
+    }
+}

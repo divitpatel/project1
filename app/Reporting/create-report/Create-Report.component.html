@@ -1,0 +1,46 @@
+<aside id="create-report">
+    <h2 class="ant-heading-three ant-font-lt text-center ant-margin-bot-20">Create a New Report</h2>
+    <div class="create-report-dropdown">
+        <!-- Dropdown containing a list of possible report types the user may create. -->
+        <div class="row">
+            <div class="col-xxs-6 col-xxs-offset-3 col-md-4 col-md-offset-4 ant-padding-0">
+                <div #reportTypeDropdown data-uxd-btn-ddl-cmp [dropdown]="content.dropDown" data-btn-class="btn-secondary" (onChange)="_onReportTypeSelect($event)"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional fields necessary for creating a new report
+         may appear below, inside .create-new-report -->
+    <div class="row">
+        <ng-container *ngIf="reportType">
+            <div class="ant-margin-bot-20"></div>
+            <div class="create-report-cont">
+                <form class="report-form" #myForm="ngForm" (ngSubmit)="createReport(myForm)">
+                    <div class="form-item col-md-12 ant-margin-bot-5">
+                        <label for="title" class="btpa ant-margin-bot-15">Title of New Report</label>
+                        <input id="title" name="title" ngModel type="text" class="ant-text-input ant-full-width" required/>
+                    </div>
+                    <!-- <div class="ant-margin-bot-20 ant-padding-lt-15 ant-padding-rt-15">
+                                <div class="col-md-4" #reportSchedule="ngModel" data-uxd-dropdown-cmp [(ngModel)]="mdSelectNm" class="m" [labelText]="content.dropDown2.title"
+                                    name="reportSchedule" id="reportSchedule" [items]="content.dropDown2.options" disabled [defaultText]="'One Time Only'">
+                                </div>
+                                </div> -->
+                    <div class="form-item col-md-12 col-xs-12 ant-margin-bot-20">
+                        <label for="description">Description</label>
+                        <textarea id="description" name='description' ngModel type="text" class="ant-text-input ant-full-width" rows="4" cols="50"></textarea>
+                    </div>
+                    <!-- <div class="collapse-block col-xs-12">
+                                    <div class="collapsed">
+                                        <span class="fa fa-plus-circle"></span>
+                                        <span>Show More Options</span>
+                                    </div>
+                                </div> -->
+                    <div class="horizontal-center col-xs-12">
+                        <button type="submit" class="btn-sm btn-primary">Create Report</button>
+                        <button class="btn-sm btn-secondary" (click)="cancelReport()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </ng-container>
+    </div>
+</aside>

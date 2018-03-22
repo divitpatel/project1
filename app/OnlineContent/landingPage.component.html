@@ -1,0 +1,18 @@
+<div data-uxd-data-loader-cmp *ngIf="pageLoading; else landingPageContainer">
+    <span>Your content is loading...</span>
+</div>
+
+
+
+<ng-template #landingPageContainer>
+    <div class="bp-box content-container static" *ngIf="contentFetchFailed || noRecords; else landingPageSlotListContainer">
+        <h3 class="no-content-available">There are no documents to display.</h3>
+    </div>
+
+    <ng-template #landingPageSlotListContainer>
+        <div class="bp-box content-container static" *ngFor="let item of slotList">
+            <product-info [wcsContent]="item" (onClick)="productSelection($event)" (onDocumentLinkClick)="onDocSelection($event)"></product-info>
+        </div>
+    </ng-template>
+
+</ng-template>

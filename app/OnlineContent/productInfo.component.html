@@ -1,0 +1,8 @@
+<div class="online-content-block">
+    <div class="title">{{wcsContent.title}}</div>
+
+    <div class="description" [innerHTML]="wcsContent.copy"></div>
+
+    <div two-column-link-list [list1]="childTaxonomyLinksList" [list2]="documentLinksList" (onLinkSelection)="onSelection($event)"
+        *ngIf="documentLinksList.length > 0 || childTaxonomyLinksList.length > 0">List loading here</div>
+</div>

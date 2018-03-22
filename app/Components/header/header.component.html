@@ -1,0 +1,49 @@
+<div class="mbr-top-of-page-wrapper" role="navigation">
+    <div class="ant-top-wrapper" id="mbr-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-1 col-xxs-2">
+                    <div class="ant-menu-button" data-analytics = "menuTopSelectionLinkFlyout">
+                        <a href="javascript:void(0)" class="ant-menu-toggle" (click)="toggleMenu()">
+                            <span class="ant-menu-icon-container">
+                                <span class="ant-menu-icon"></span>
+                            </span>
+                            <span class="ant-menu-label hidden-xxs hidden-xs hidden-sm">Menu</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-xs-10 col-xxs-8 ant-logo-wrapper-col">
+                    <a href="/" aria-label="home">
+                        <div class="ant-logo-wrapper"><img src="./app/uxAssets/images/Anthem_Inc.png" alt="Anthem Inc"></div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-11 col-xxs-10 ant-task-bar-wrapper-col">
+                    <ul class="ant-task-bar">
+                      <!--Notification will be available in the future development
+                         <li class="ant-task-bar-item ant-profile">
+                            <a class="ant-task-bar-icon" href="javascript:void(0)" aria-label="notifications">
+                                <span class="fa fa-bell"></span>
+                            </a>
+                        </li> -->
+                        <li class="ant-task-bar-item ant-profile">
+                            <a aria-label="task bar button profile" class="ant-task-bar-icon" href="javascript:void(0)" aria-label="task bar button profile"
+                                (click)="profileMenu()">
+                                <span class="fa fa-user"></span>
+                                <span class="sr-only ng-binding">Profile</span>
+                            </a>
+                        </li>
+                        <app-user-profile *ngIf="profileLoaded">
+                        </app-user-profile>
+                        <!-- Global Serach will be available in the future development
+                         <li class="ant-task-bar-item ant-search">
+                            <a class="ant-task-bar-icon" href="javascript:void(0)" aria-label="task bar button messages">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-menu *ngIf="menuLoaded"  [features]="features" (handleClick)="toggleMenu($event)"></app-menu>
+</div>
